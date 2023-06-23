@@ -1,0 +1,106 @@
+:root {
+  color-scheme: dark;
+}
+
+::selection {
+  background-color: var(--orange);
+}
+
+body {
+  --white: #fff;
+  --black: #000;
+  --grey: #212121;
+  --blurple: #242230;
+  --red: #c72222;
+  --orange: #ee522a;
+
+  color: #fff;
+  background-color: var(--black);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--blurple);
+  padding: 10px;
+  user-select: none;
+}
+header img {
+  height: 85px;
+  margin: 5px 5px 30px 5px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+section {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+thead tr {
+  background-color: var(--blurple);
+  font-weight: bold;
+}
+thead td {
+  padding: 10px;
+}
+th, td {
+  text-align: left;
+  padding: 5px;
+  text-align: center;
+}
+tr {
+  background-color: #1a1a1a;
+}
+tr:nth-child(even){background-color: var(--black);}
+tbody tr:hover {background-color: #333333;}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 20px 5px 20px;
+  background: var(--blurple);
+}
+.footer p {
+  margin: 0;
+  float: left;
+}
+.footer p a {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+.footer a {
+  color: var(--white);
+  padding-right: 40px;
+  float: right;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}

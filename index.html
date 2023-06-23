@@ -2,18 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Battlebit Player Count</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>BATTLEBIT Player Count</title>
+  <link rel="icon" href="src/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="script.js"></script>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script><!-- Dev Only -->
 </head>
 <body>
   <header>
-    <h1 id="total-players"></h1>
+    <img src="src/Logo-Transparent.png">
+    <h1 id="total-players"></h1><h3>CONCURRENT PLAYERS</h3>
   </header>
   <div class="container">
     <section id="player-count-per-region"></section>
     <section id="map-occurrences"></section>
     <section id="max-player-count-occurrences"></section>
+  </div>
+  <div class="footer">
+    <p><script>document.write(/\d{4}/.exec(Date())[0])</script> &#8226;&nbsp;This is a fan made project using <b><a href="https://joinbattlebit.com"> BattleBit</a></b> Remastered's API</p>
+    <a href="https://github.com/yungsamd17/Battlebit"><i class="fa-brands fa-github"></i> GitHub Repo</a>
   </div>
 </body>
 </html>
