@@ -1,4 +1,4 @@
-# [BATTLEBIT Concurrent Players Stats](https://yungsamd17.github.io//Battlebit/)
+# [BATTLEBIT Concurrent Players Stats](https://yungsamd17.github.io//battlebit/)
 
 This is a fan made project using [BattleBit](https://joinbattlebit.com) Remastered's API to show concurrent players statistics.
 
