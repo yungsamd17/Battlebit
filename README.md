@@ -8,3 +8,7 @@ This is a fan made project using [BattleBit](https://joinbattlebit.com) Remaster
 - Region player count
 - Number of how many times which map is being played
 - What modes are players playing
+
+## Credits
+
+Forked from [YoeJates/Battlebit](https://github.com/YoeJates/Battlebit)
