@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const totalPlayers = apiData.reduce((sum, server) => sum + server.MaxPlayers, 0);
     document.getElementById("total-players").textContent = formatNumberWithCommas(totalPlayers);
 
+    // Calculate total server count
+    const serverCount = apiData.length;
+    document.getElementById("total-server-count").textContent = `TOTAL SERVERS: ${serverCount}`;
+
     // Display player count per region
     const playerCountPerRegion = {};
     for (const server of apiData) {
