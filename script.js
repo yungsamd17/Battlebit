@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const mapNameHeaderCell = mapOccurrencesHeaderRow.insertCell();
     const occurrencesHeaderCell = mapOccurrencesHeaderRow.insertCell();
     mapNameHeaderCell.textContent = "MAP NAME";
-    occurrencesHeaderCell.textContent = "OCCURRENCES";
+    occurrencesHeaderCell.textContent = "NUMBER OF SERVERS";
 
     for (const mapName in mapCounts) {
       const row = mapOccurrencesTableBody.insertRow();
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const maxPlayerCountHeaderCell = maxPlayerCountOccurrencesHeaderRow.insertCell();
     const occurrencesHeaderCell2 = maxPlayerCountOccurrencesHeaderRow.insertCell();
     maxPlayerCountHeaderCell.textContent = "MODE (Players)";
-    occurrencesHeaderCell2.textContent = "OCCURRENCES";
+    occurrencesHeaderCell2.textContent = "NUMBER OF SERVERS";
 
     for (const maxPlayers in maxPlayerCountCounts) {
       const row = maxPlayerCountOccurrencesTableBody.insertRow();
