@@ -9,10 +9,12 @@
 body {
   --white: #fff;
   --black: #000;
+  --light-grey: #949697;
   --grey: #212121;
+  --dark-grey: #1a1a1a;
   --blurple: #242230;
   --red: #c72222;
-  --orange: #ee522a;
+  --orange: #e6663b;
 
   color: #fff;
   background-color: var(--black);
@@ -23,7 +25,11 @@ body {
 }
 
 header {
-  background-color: var(--blurple);
+  background-image: url("header-banner.png");
+  background-position: center;
+  background-position-y: -2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px;
   user-select: none;
 }
@@ -34,12 +40,14 @@ header img {
 
 h1 {
   margin: 0;
+  text-shadow: 1px 4px 8px black;
   font-size: 3rem;
   font-weight: 900;
 }
 h3 {
   margin: 0;
   font-weight: 300;
+  text-shadow: 1px 4px 5px black;
 }
 .container {
   display: flex;
@@ -62,8 +70,10 @@ table {
   overflow: hidden;
 }
 thead tr {
-  background-color: var(--blurple);
+  color: black;
+  background-color: var(--orange);
   font-weight: bold;
+  user-select: none;
 }
 thead td {
   padding: 10px;
@@ -74,7 +84,7 @@ th, td {
   text-align: center;
 }
 tr {
-  background-color: #1a1a1a;
+  background-color: var(--dark-grey);
 }
 tr:nth-child(even){background-color: var(--black);}
 tbody tr:hover {background-color: #333333;}
@@ -84,23 +94,40 @@ tbody tr:hover {background-color: #333333;}
   bottom: 0;
   width: 100%;
   padding: 5px 20px 5px 20px;
-  background: var(--blurple);
+  background: var(--dark-grey);
 }
 .footer p {
   margin: 0;
   float: left;
 }
-.footer p a {
+
+.footer-links {
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-links:hover {
+  color: var(--orange);
+}
+
+.footer-api-link {
   margin: 0;
   padding: 0;
   float: none;
+  color: var(--white);
 }
-.footer a {
+.footer-api-link:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.github-link {
   color: var(--white);
   padding-right: 40px;
   float: right;
+  font-weight: bold;
   text-decoration: none;
 }
-.footer a:hover {
-  text-decoration: underline;
+.github-link:hover {
+  color: var(--orange);
 }
