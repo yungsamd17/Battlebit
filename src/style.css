@@ -24,7 +24,7 @@ body {
   margin: 0;
 }
 
-header {
+.main-header {
   background-image: url("header-banner.png");
   background-position: center;
   background-position-y: -2rem;
@@ -33,33 +33,39 @@ header {
   padding: 10px;
   user-select: none;
 }
-header img {
+.main-header img {
   height: 85px;
   margin: 5px 5px 30px 5px;
 }
 
-h1 {
+.main-header h1 {
   margin: 0;
   text-shadow: 1px 4px 8px black;
   font-size: 3rem;
   font-weight: 900;
 }
-h3 {
+.main-header h2 {
   margin: 0;
   text-shadow: 1px 4px 5px black;
 }
+
+.total-server-container {
+  margin: 15px;
+}
+.total-server-container h3 {
+  color: var(--white);
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 section {
   flex-basis: 30%;
   margin-bottom: 20px;
 }
-
 table {
   margin: 0 auto;
   border-collapse: collapse;
@@ -99,7 +105,6 @@ tbody tr:hover {background-color: #333333;}
   margin: 0;
   float: left;
 }
-
 .footer-links {
   color: var(--white);
   font-weight: bold;
@@ -108,7 +113,6 @@ tbody tr:hover {background-color: #333333;}
 .footer-links:hover {
   color: var(--orange);
 }
-
 .footer-api-link {
   margin: 0;
   padding: 0;
@@ -119,7 +123,6 @@ tbody tr:hover {background-color: #333333;}
   color: var(--orange);
   text-decoration: underline;
 }
-
 .github-link {
   color: var(--white);
   padding-right: 40px;

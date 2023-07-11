@@ -10,11 +10,14 @@
   <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> Dev Only -->
 </head>
 <body>
-  <header>
+  <div class="main-header">
     <img src="src/Logo-Transparent.png">
-    <h1 id="total-players"></h1><h3 style="font-weight: 300">CONCURRENT PLAYERS</h3>
-    <h3 id="total-server-count" style="margin: 10px 0 0 0"></h3>
-  </header>
+    <h1 id="total-players"></h1>
+    <h2>CONCURRENT PLAYERS</h2>
+  </div>
+  <div class="total-server-container">
+    <h3 id="total-server-count"></h3>
+  </div>
   <div class="container">
     <section id="player-count-per-region"></section>
     <section id="map-occurrences"></section>
